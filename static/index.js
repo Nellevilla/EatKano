@@ -500,6 +500,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             _gameSettingNum = parseInt(cookie('gameTime'));
             gameRestart();
         }
+        document.cookie += ";SameSite=Lax";
     }
 
     w.show_btn = function() {
